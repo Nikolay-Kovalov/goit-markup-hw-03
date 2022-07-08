@@ -10,6 +10,8 @@
 /* Body */
 
 body {
+    width: 1600px;
+
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -17,22 +19,78 @@ body {
 
 /* Lists styles  */
 
+h1, h2, h3, h4, h5, h6, ul, p {
+margin: 0;
+}
+
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 } 
+
+.image {
+    display: block;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .link {
     text-decoration: none;
 }
 
 
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Headder */
 
 .page-headder {
     background-color: var(--background-header);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.headder {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 /* Logo */
+
+.logo {
+    margin-right: 93px;
+    width: 145px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .logo-web {
     color: #2196F3;
@@ -53,14 +111,28 @@ body {
 
 /* Site-nav */
 
+.site-nav {
+    display: flex;
+    padding-left: 0px;
+}
+
+
 .site-nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
     color:#212121;
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        outline: solid 2px tomato;
 }
+
+
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
 
 .site-nav-link:hover,
 .site-nav-link:focus {
@@ -69,13 +141,26 @@ body {
 
 /* Contacts */
 
+.contacts { 
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item:not(:last-child){
+    margin-right: 50px;
+
+}
+
 .contacts-link {
+display: block;
+padding-top: 32px;
+padding-bottom: 32px;
+
     color: var(--primary-text-color);
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        outline: solid 2px tomato;
 }
 
 .contacts-link:hover:hover,
@@ -86,11 +171,18 @@ body {
 /* Hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
     background-color: #2F303A;
-    outline: solid 2px tomato;
 }
 
 .hero-title {
+width: 696px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
     color:#FFFFFF;
         font-weight: 900;
         font-size: 44px;
@@ -98,11 +190,16 @@ body {
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        outline: solid 2px tomato;
 }
 
 .hero .button {
-    cursor: pointer;
+    display: block;
+    width: 200px;
+margin: 0 auto;
+padding-top: 10px;
+padding-bottom: 10px;
+
+cursor: pointer;
 color: #FFFFFF;
 background-color: #2196F3;  
 font-family: inherit;
@@ -110,68 +207,130 @@ font-family: inherit;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    outline: solid 2px tomato;
 }
 
 /* Advantages */
+.advantage-section .item {
+    flex-basis: 270px;
+}
+
+.advantage-section .item:not(:last-child) {
+margin-right: 30px;
+}
+
+.advantage-section .list {
+    display: flex;
+}
 
 .advantage-section .list-item-title {
+    padding-left: 0;
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
         font-size: 14px;
         line-height: 1.14;
         text-transform: uppercase;
-        outline: solid 2px tomato;
 }
 
 .advantage-section .list-item-text {
         font-size: 14px;
         line-height: 1.71;
-        outline: solid 2px tomato;
 }
 /* Work */
+.work-section .list {
+    display: flex;
+    justify-content: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.work-section .item {
+flex-basis: 370px;
+}
 
 .work-section .title {
+width: 376px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 50px;
+
     color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    outline: solid 2px tomato;
 }
+
+.work-section .item:not(:last-child){
+    margin-right: 30px;
+}
+
 /* Our team */
+
+.team-section .team-list {
+    display: flex;
+    justify-content: center;
+}
+
+.team-section .item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.team-section .item {
+    flex-basis: 270px;
+}
 
 .team-section {
 background-color: #F5F4FA;
-outline: solid 2px tomato;
-
 }
 
 .team-section .title {
+    width: 264px;
+    margin-bottom: 50px;
+    margin-left: auto;
+        margin-right: auto;
+
 color: var(--title-text-color);
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
-    outline: solid 2px tomato;
 }
 
 .team-section .list-title {
+    margin-bottom: 10px;
+
     color: var(--title-text-color);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.19; 
-        outline: solid 2px tomato;
 }
 
 .team-section .list-title-text {
         font-size: 16px;
         line-height: 1.19;
-        outline: solid 2px tomato;
     }
-        
+
+.team-section .card-content {
+    width: 270px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+
+    background-color: #FFFFFF;
+}    
 
   /* Footer */
 
 .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
     background-color: var(--background-footer);
+}
+
+.logo-footer {
+    margin-bottom: 20px;
 }
 
 .logo-studio-footer {
@@ -186,14 +345,12 @@ color: #FFFFFF;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71px; 
-    outline: solid 2px tomato;
 } 
 .mail-link {
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
         font-size: 14px;
-        line-height: 1.71;
-        outline: solid 2px tomato;       
+        line-height: 1.71;     
 }
 
 .phone-link {
@@ -201,7 +358,6 @@ color: #FFFFFF;
     font-style: normal;
             font-size: 14px;
             line-height: 1.71;
-            outline: solid 2px tomato;
 }
 
 .mail-link:hover,
@@ -215,7 +371,32 @@ color: #FFFFFF;
  /* Work examples section */
   /* Filters */
 
+
+.examples-section .list-button {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-bottom: 34px;
+}
+
+.examples-section .examples-list {
+display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    justify-content: center;  
+}
+
+.examples-list > .list-item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
 .examples-section .button {
+    padding: 6px 22px;
+    border-radius: 4px;
+
     cursor: pointer;
     background-color: #F5F4FA;
     color: #212121;
@@ -223,9 +404,11 @@ color: #FFFFFF;
         font-weight: 500;
         font-size: 16px;
         line-height: 1.62;
-        outline: solid 2px tomato;
-        }
+}
 
+.examples-section .item:not(:last-child) {
+    margin-right: 8px;
+}
 .examples-section .button:hover,
 .examples-section .button:focus {
     background-color: var(--accent-color);
@@ -234,20 +417,32 @@ color: #FFFFFF;
 
 /* Work examples */
 
-.examples-list .link {
-    text-decoration: none;
-}
 .examples-list .title {
+    margin-bottom: 4px;
+
     color: var(--title-text-color);
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em; 
-        outline: solid 2px tomato;
 }
 
 .examples-list .text {
     color: var(--primary-text-color);
         font-size: 16px;
         line-height: 1.88;
-        outline: solid 2px tomato;
+
+}
+
+.examples-list .card-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+border-right: 1px solid #EEEEEE; 
+border-left: 1px solid #EEEEEE;;  
+border-bottom: 1px solid #EEEEEE;
+}
+
+.current {
+    color: var(--accent-color);
 }
