@@ -203,6 +203,10 @@ letter-spacing: 0.06em;
 }
 
 /* Advantages */
+.advantage-section {
+  padding-top: 94px;
+  padding-bottom: 0px;
+}
 
 .advantage-section .item {
 flex-basis: 270px;
@@ -334,6 +338,10 @@ font-size: 26px;
 line-height: 1.19
 }
 
+.footer .item {
+margin-bottom: 9px;
+}
+
 .address-link {
 color: #FFFFFF;
 font-style: normal;
@@ -371,7 +379,7 @@ color: var(--accent-color);
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
-margin-bottom: 34px;
+margin-bottom: 50px;
 }
 
 .examples-section .examples-list {
